@@ -1,0 +1,27 @@
+function twoSum(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i; j < nums.length; j++) {
+            if (nums[i] + nums[j] == target) {
+                return [i, j];
+            }
+        }
+    }
+    return [0, 0];
+}
+;
+export function twoSumOptimized(nums, target) {
+    const map = new Map();
+    const res = [];
+    nums.forEach((num, index) => {
+        const sub = target - num;
+        if (map.has(sub)) {
+            const result = [map.get(sub), index];
+            res.push(...result);
+            return;
+        }
+        map.set(num, index);
+    });
+    return res;
+}
+;
+//# sourceMappingURL=two-sums.js.map
