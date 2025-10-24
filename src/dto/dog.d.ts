@@ -8,8 +8,8 @@ export interface LivingCreature {
     id: number;
     born?: Date;
 }
-export type Dog = Animal;
 export type Banana = Omit<Animal, "age">;
+export type Dog = Animal & Banana;
 export interface Cat {
     id: number;
     name: string;
