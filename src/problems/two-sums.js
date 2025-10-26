@@ -11,12 +11,12 @@ function twoSum(nums, target) {
 ;
 export function twoSumOptimized(nums, target) {
     const map = new Map();
-    const res = [];
+    let res = [0, 0];
     nums.forEach((num, index) => {
         const sub = target - num;
         if (map.has(sub)) {
             const result = [map.get(sub), index];
-            res.push(...result);
+            res = result;
             return;
         }
         map.set(num, index);
