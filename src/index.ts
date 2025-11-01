@@ -1,6 +1,7 @@
 import type {Dog, PackOfDogs,Banana} from "./dto/dog.ts"
 import { twoSumOptimized } from "./problems/two-sums.js"
 import { addTwoNumbers,ListNode } from "./problems/two-number.js"
+import { findMedianSortedArrays } from "./problems/median-sorted-arr.js"
 
 // const dog : Dog= {
 // id:1,
@@ -35,8 +36,10 @@ import { addTwoNumbers,ListNode } from "./problems/two-number.js"
 
 // console.log(...packsOfDogs.packs2)
 
-console.log(twoSumOptimized([3,2,4],6))
+// console.log(twoSumOptimized([3,2,4],6))
 
-const listNode = new ListNode(1,new ListNode(5, new ListNode(2)))
+// const listNode = new ListNode(1,new ListNode(5, new ListNode(2)))
 
-console.log(addTwoNumbers(listNode,listNode))
+// console.log(addTwoNumbers(listNode,listNode))
+
+console.log(findMedianSortedArrays([5,2,1],[1,3,6]))

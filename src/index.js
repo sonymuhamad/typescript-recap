@@ -1,5 +1,6 @@
 import { twoSumOptimized } from "./problems/two-sums.js";
 import { addTwoNumbers, ListNode } from "./problems/two-number.js";
+import { findMedianSortedArrays } from "./problems/median-sorted-arr.js";
 // const dog : Dog= {
 // id:1,
 // name:"dog name",
@@ -26,7 +27,8 @@ import { addTwoNumbers, ListNode } from "./problems/two-number.js";
 //     console.log(id,rest)
 // }
 // console.log(...packsOfDogs.packs2)
-console.log(twoSumOptimized([3, 2, 4], 6));
-const listNode = new ListNode(1, new ListNode(5, new ListNode(2)));
-console.log(addTwoNumbers(listNode, listNode));
+// console.log(twoSumOptimized([3,2,4],6))
+// const listNode = new ListNode(1,new ListNode(5, new ListNode(2)))
+// console.log(addTwoNumbers(listNode,listNode))
+console.log(findMedianSortedArrays([5, 2, 1], [1, 3, 6]));
 //# sourceMappingURL=index.js.map
