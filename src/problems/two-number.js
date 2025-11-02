@@ -39,6 +39,9 @@ export function addTwoNumbers(l1, l2) {
             l2 = null;
         }
     }
+    if (remainder > 0) {
+        arrNode.push(new ListNode(remainder));
+    }
     const result = arrNode[0];
     let current = result;
     for (let i = 1; i < arrNode.length; i++) {
